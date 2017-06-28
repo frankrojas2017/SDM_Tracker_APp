@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Kms Versions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Version</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @kms_versions.each do |kms_version| %>
+      <tr>
+        <td><%= kms_version.version %></td>
+        <td><%= link_to 'Show', kms_version %></td>
+        <td><%= link_to 'Edit', edit_kms_version_path(kms_version) %></td>
+        <td><%= link_to 'Destroy', kms_version, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Kms Version', new_kms_version_path %>

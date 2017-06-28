@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Po number:</strong>
+  <%= @po.po_number %>
+</p>
+
+<p>
+  <strong>Customer:</strong>
+  <%= @po.customer_id %>
+</p>
+
+<p>
+  <strong>Quote number:</strong>
+  <%= @po.quote_number %>
+</p>
+
+<p>
+  <strong>Date received:</strong>
+  <%= @po.date_received %>
+</p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @po.amount %>
+</p>
+
+<%= link_to 'Edit', edit_po_path(@po) %> |
+<%= link_to 'Back', pos_path %>

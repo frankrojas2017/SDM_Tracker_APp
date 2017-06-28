@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Agreement type:</strong>
+  <%= @agreement.agreement_type %>
+</p>
+
+<p>
+  <strong>Start date:</strong>
+  <%= @agreement.start_date %>
+</p>
+
+<p>
+  <strong>End date:</strong>
+  <%= @agreement.end_date %>
+</p>
+
+<p>
+  <strong>Approved:</strong>
+  <%= @agreement.approved %>
+</p>
+
+<p>
+  <strong>Link:</strong>
+  <%= @agreement.link %>
+</p>
+
+<%= link_to 'Edit', edit_agreement_path(@agreement) %> |
+<%= link_to 'Back', agreements_path %>

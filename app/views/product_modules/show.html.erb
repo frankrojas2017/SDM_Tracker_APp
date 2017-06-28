@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Module name:</strong>
+  <%= @product_module.module_name %>
+</p>
+
+<p>
+  <strong>Customer:</strong>
+  <%= @product_module.customer_id %>
+</p>
+
+<p>
+  <strong>Po number:</strong>
+  <%= @product_module.po_number %>
+</p>
+
+<%= link_to 'Edit', edit_product_module_path(@product_module) %> |
+<%= link_to 'Back', product_modules_path %>

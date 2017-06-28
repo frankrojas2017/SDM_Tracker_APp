@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Customer:</strong>
+  <%= @quote.customer_id %>
+</p>
+
+<p>
+  <strong>Quote number:</strong>
+  <%= @quote.quote_number %>
+</p>
+
+<p>
+  <strong>Quote date:</strong>
+  <%= @quote.quote_date %>
+</p>
+
+<p>
+  <strong>Valid to:</strong>
+  <%= @quote.valid_to %>
+</p>
+
+<p>
+  <strong>Total:</strong>
+  <%= @quote.total %>
+</p>
+
+<%= link_to 'Edit', edit_quote_path(@quote) %> |
+<%= link_to 'Back', quotes_path %>

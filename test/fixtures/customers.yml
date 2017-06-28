@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyText
+  division: MyText
+  site: MyText
+  mailing_adress: MyText
+  kms_version: one
+  project_code: MyString
+
+two:
+  name: MyText
+  division: MyText
+  site: MyText
+  mailing_adress: MyText
+  kms_version: two
+  project_code: MyString

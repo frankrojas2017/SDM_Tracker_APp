@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  agreement_type: one
+  start_date: 2017-06-16 13:12:51
+  end_date: 2017-06-16 13:12:51
+  approved: false
+  link: MyString
+
+two:
+  agreement_type: two
+  start_date: 2017-06-16 13:12:51
+  end_date: 2017-06-16 13:12:51
+  approved: false
+  link: MyString

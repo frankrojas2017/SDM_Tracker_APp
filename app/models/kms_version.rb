@@ -1,0 +1,2 @@
+class KmsVersion < ApplicationRecord
+end

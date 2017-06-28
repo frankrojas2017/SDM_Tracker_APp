@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  quote_number: one
+  Service_type: MyString
+  quantity: 1
+  price: 9.99
+  service_total: 9.99
+  term_start: 2017-06-16 14:37:25
+  term_end: 2017-06-16 14:37:25
+  term_length: MyString
+  annual_increase: 9.99
+  CRM_Number: MyString
+
+two:
+  quote_number: two
+  Service_type: MyString
+  quantity: 1
+  price: 9.99
+  service_total: 9.99
+  term_start: 2017-06-16 14:37:25
+  term_end: 2017-06-16 14:37:25
+  term_length: MyString
+  annual_increase: 9.99
+  CRM_Number: MyString

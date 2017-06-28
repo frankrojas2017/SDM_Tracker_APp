@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Agreements</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Agreement type</th>
+      <th>Start date</th>
+      <th>End date</th>
+      <th>Approved</th>
+      <th>Link</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @agreements.each do |agreement| %>
+      <tr>
+        <td><%= agreement.agreement_type %></td>
+        <td><%= agreement.start_date %></td>
+        <td><%= agreement.end_date %></td>
+        <td><%= agreement.approved %></td>
+        <td><%= agreement.link %></td>
+        <td><%= link_to 'Show', agreement %></td>
+        <td><%= link_to 'Edit', edit_agreement_path(agreement) %></td>
+        <td><%= link_to 'Destroy', agreement, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Agreement', new_agreement_path %>

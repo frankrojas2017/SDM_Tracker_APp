@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Quote number:</strong>
+  <%= @service.quote_number %>
+</p>
+
+<p>
+  <strong>Service type:</strong>
+  <%= @service.Service_type %>
+</p>
+
+<p>
+  <strong>Quantity:</strong>
+  <%= @service.quantity %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @service.price %>
+</p>
+
+<p>
+  <strong>Service total:</strong>
+  <%= @service.service_total %>
+</p>
+
+<p>
+  <strong>Term start:</strong>
+  <%= @service.term_start %>
+</p>
+
+<p>
+  <strong>Term end:</strong>
+  <%= @service.term_end %>
+</p>
+
+<p>
+  <strong>Term length:</strong>
+  <%= @service.term_length %>
+</p>
+
+<p>
+  <strong>Annual increase:</strong>
+  <%= @service.annual_increase %>
+</p>
+
+<p>
+  <strong>Crm number:</strong>
+  <%= @service.CRM_Number %>
+</p>
+
+<%= link_to 'Edit', edit_service_path(@service) %> |
+<%= link_to 'Back', services_path %>

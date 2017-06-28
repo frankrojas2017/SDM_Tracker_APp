@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  module_name: MyText
+  customer_id: one
+  po_number: one
+
+two:
+  module_name: MyText
+  customer_id: two
+  po_number: two

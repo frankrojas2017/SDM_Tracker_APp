@@ -1,0 +1,22 @@
+<%= form_for(kms_version) do |f| %>
+  <% if kms_version.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(kms_version.errors.count, "error") %> prohibited this kms_version from being saved:</h2>
+
+      <ul>
+      <% kms_version.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :version %>
+    <%= f.text_field :version %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

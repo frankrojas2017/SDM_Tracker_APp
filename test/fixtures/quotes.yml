@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  quote_number: MyString
+  version: MyString
+  customer_id: one
+  quote_date: 2017-06-16 13:16:43
+  valid_to: 2017-06-16 13:16:43
+  total: 9.99
+
+two:
+  quote_number: MyString
+  version: MyString
+  customer_id: two
+  quote_date: 2017-06-16 13:16:43
+  valid_to: 2017-06-16 13:16:43
+  total: 9.99

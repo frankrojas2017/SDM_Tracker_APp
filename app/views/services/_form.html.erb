@@ -1,0 +1,67 @@
+<%= form_for(service) do |f| %>
+  <% if service.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(service.errors.count, "error") %> prohibited this service from being saved:</h2>
+
+      <ul>
+      <% service.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :quote_number_id %>
+    <%= f.text_field :quote_number_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Service_type %>
+    <%= f.text_field :Service_type %>
+  </div>
+
+  <div class="field">
+    <%= f.label :quantity %>
+    <%= f.number_field :quantity %>
+  </div>
+
+  <div class="field">
+    <%= f.label :price %>
+    <%= f.text_field :price %>
+  </div>
+
+  <div class="field">
+    <%= f.label :service_total %>
+    <%= f.text_field :service_total %>
+  </div>
+
+  <div class="field">
+    <%= f.label :term_start %>
+    <%= f.datetime_select :term_start %>
+  </div>
+
+  <div class="field">
+    <%= f.label :term_end %>
+    <%= f.datetime_select :term_end %>
+  </div>
+
+  <div class="field">
+    <%= f.label :term_length %>
+    <%= f.text_field :term_length %>
+  </div>
+
+  <div class="field">
+    <%= f.label :annual_increase %>
+    <%= f.text_field :annual_increase %>
+  </div>
+
+  <div class="field">
+    <%= f.label :CRM_Number %>
+    <%= f.text_field :CRM_Number %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

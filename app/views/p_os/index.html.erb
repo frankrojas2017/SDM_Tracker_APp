@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Pos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Po number</th>
+      <th>Customer</th>
+      <th>Quote number</th>
+      <th>Date received</th>
+      <th>Amount</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pos.each do |po| %>
+      <tr>
+        <td><%= po.po_number %></td>
+        <td><%= po.customer_id %></td>
+        <td><%= po.quote_number %></td>
+        <td><%= po.date_received %></td>
+        <td><%= po.amount %></td>
+        <td><%= link_to 'Show', po %></td>
+        <td><%= link_to 'Edit', edit_po_path(po) %></td>
+        <td><%= link_to 'Destroy', po, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Po', new_po_path %>
