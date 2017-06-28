@@ -11,6 +11,8 @@ ActiveAdmin.register_page "Dashboard" do
     #     small I18n.t("active_admin.dashboard_welcome.call_to_action")
     #   end
     # end
+
+    menu priority: 0, label: proc{ I18n.t("active_admin.dashboard") }
 section "Recent Adjustments" do
   table_for Adjustment.order("price desc").limit(5) do
     column "Reason for the Adjustment", :reason do |adjustment|

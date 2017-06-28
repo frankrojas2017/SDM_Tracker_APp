@@ -1,5 +1,6 @@
 ActiveAdmin.register Quote do
   permit_params :customer_id, :quote_number, :quote_date, :valid_to, :total, :created_at, :updated_at
+  menu parent: 'Agreements and Documents'
   index do
     column "Quote ID", :id
     column :customer

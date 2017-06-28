@@ -1,5 +1,6 @@
 ActiveAdmin.register Fee do
 permit_params :quote_id, :fee_type_id, :price
+menu parent: 'Types & Lists'
 =begin
 index do
   column :quote_id

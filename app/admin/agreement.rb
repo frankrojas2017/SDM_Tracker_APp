@@ -1,5 +1,6 @@
 ActiveAdmin.register Agreement do
   permit_params :agreement_type_id, :start_date, :end_date, :approved, :link
+  menu parent: 'Agreements and Documents'
   # form do |f|
   #   inputs "Agreement Details" do
   #     index do
