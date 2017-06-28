@@ -154,6 +154,7 @@
     <orderEntry type="library" scope="PROVIDED" name="actionmailer (v5.0.4, ruby-2.4.1-p111) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="actionpack (v5.0.4, ruby-2.4.1-p111) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="actionview (v5.0.4, ruby-2.4.1-p111) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="active_admin_flat_skin (v0.1.2, ruby-2.4.1-p111) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activeadmin (v1.0.0, ruby-2.4.1-p111) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activejob (v5.0.4, ruby-2.4.1-p111) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activemodel (v5.0.4, ruby-2.4.1-p111) [gem]" level="application" />

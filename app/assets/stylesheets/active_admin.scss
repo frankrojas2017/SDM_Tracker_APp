@@ -6,10 +6,27 @@
 //
 // For example, to change the sidebar width:
 // $sidebar-width: 242px;
+//$primary-color: #004990 !default;
+
+$panelBorder: #babdc5;
+$skinActiveColor: #00afd5;
+$bodyColor: rgba(236, 240, 241, 0.48);
+$skinBlack: rgb(36, 105, 135);
+$panelHeaderBck: $skinBlack;
+$skinBlackLight: rgb(69, 90, 100);
+$textGray: rgb(174, 179, 181);
+$skinTextColor: #1e2a33;
+$skinTextActiveColor: white;
+$skinTextTable: #7f8c8d;
+$skinHeaderBck: #1e2a33;
+
+
 
 // Active Admin's got SASS!
 @import "active_admin/mixins";
 @import "active_admin/base";
+@import "active_admin_flat_skin";
+//@import "font-awesome.css";
 
 // Overriding any non-variable SASS must be done after the fact.
 // For example, to change the default status-tag color:

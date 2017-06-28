@@ -1,5 +1,12 @@
 class CustomersController < InheritedResources::Base
 
+  show do
+    attributes_table do
+      row :title
+
+    end
+  end
+
   private
 
     def customer_params

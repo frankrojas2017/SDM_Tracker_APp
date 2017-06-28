@@ -30,5 +30,6 @@
   <%= @customer.project_code %>
 </p>
 
+<%= link_to 'New', new_customer_path(@customer) %>
 <%= link_to 'Edit', edit_customer_path(@customer) %> |
 <%= link_to 'Back', customers_path %>
