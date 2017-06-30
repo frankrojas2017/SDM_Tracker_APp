@@ -11,7 +11,7 @@
 $panelBorder: #babdc5;
 $skinActiveColor: #00afd5;
 $bodyColor: rgba(236, 240, 241, 0.48);
-$skinBlack: rgb(36, 105, 135);
+$skinBlack: rgb(36, 7, 105);
 $panelHeaderBck: $skinBlack;
 $skinBlackLight: rgb(69, 90, 100);
 $textGray: rgb(174, 179, 181);
@@ -37,4 +37,16 @@ $skinHeaderBck: #1e2a33;
 }
 .total {
   text-align: right;
+}
+.title_bar#title_bar {
+  background-color: #37474f;
+  h2 {
+    color: white;
+  }
+}
+.header#header{
+  .site_title {
+    background-color: #37474f;
+    color: #00afd5;
+  }
 }

@@ -184,7 +184,7 @@ ActiveAdmin.setup do |config|
   # Create another checkbox is disabled by default. You can customize it for individual
   # resources or you can enable them globally from here.
   #
-  # config.create_another = true
+  config.create_another = true
 
   # == Register Stylesheets & Javascripts
   #
@@ -221,6 +221,17 @@ ActiveAdmin.setup do |config|
   #       admin.add_logout_button_to_menu menu
   #     end
   #   end
+  config.namespace :admin do |admin|
+    admin.build_menu do |menu|
+      menu.add label: 'Dashboard', priority: 1
+      menu.add label: 'Businesses & People', priority: 2
+      menu.add label: 'Agreements and Documents', priority: 3
+      menu.add label: 'Types & Lists', priority: 4
+      menu.add label: 'Manage Users', priority: 5
+      menu.add label: 'Comments', priority: 6
+    end
+  end
+
   #
   # If you wanted to add a static menu item to the default menu provided:
   #

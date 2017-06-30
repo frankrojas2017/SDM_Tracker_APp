@@ -15,4 +15,21 @@ ActiveAdmin.register Quote do
     column :updated_at
     actions
   end
+
+  form do |f|
+    f.inputs do
+      f.input :customer, :label => "Select Customer", :as => :select, :collection => Customer.all
+    end
+  end
+
+  semantic_form_for @customer do |f|
+    f.inputs do
+      f.inputs :site
+
+    end
+  end
+
+
+
+
 end

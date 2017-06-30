@@ -11,6 +11,9 @@ menu parent: 'Businesses & People'
   action_item only: :show do
     link_to 'New Customer', action: :new
   end
+  action_item only: :show do
+    link_to 'All Customers', action: :index
+  end
 # end
 
   # show do
